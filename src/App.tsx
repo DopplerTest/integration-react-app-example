@@ -9,6 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Environment: {process.env.NODE_ENV}</p>
         <p>The example env variable: {process.env.REACT_APP_TEST_VAR}</p>
+        <p>All variables:</p>
+        <pre>{JSON.stringify(process.env)}</pre>
         <a
           className="App-link"
           href="https://reactjs.org"
