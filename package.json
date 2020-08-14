@@ -16,7 +16,7 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "doppler run -- react-scripts start",
     "doppler": "(curl -Ls https://cli.doppler.com/install.sh || wget -qO- https://cli.doppler.com/install.sh) | sh && doppler enclave setup --no-prompt && npm run build",
     "build": "doppler run -- react-scripts build",
     "test": "doppler run -- react-scripts test",
